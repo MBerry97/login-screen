@@ -8,7 +8,6 @@ const App = () => {
     <div className="App">
       <Router >
       <LoginBox path='/'/>
-      
       </Router>
     </div>
   );

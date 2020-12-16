@@ -1,0 +1,9 @@
+.inputForm__container {
+  text-align: start;
+  line-height: 40px;
+}
+#inputBox {
+  border-radius: 5px;
+  width: 97%;
+  height: 30px;
+}

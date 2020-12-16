@@ -2,7 +2,6 @@
   font-family: 'Mulish Black';
   src: url('./assets/Mulish/Mulish-VariableFont_wght.ttf') format('woff');
   font-weight: 100 1000;
-  font-stretch: 75% 125%;
 }
 
 .App {

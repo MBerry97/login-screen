@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginButton from '../loginButton/loginButton';
-
+import './loginInputForm.css'
 
 const LoginInputForm = (props) => {
   
@@ -28,12 +28,12 @@ const onLogin = (event) => {
  
 
   return (
-    <div>
+    <div className='inputForm__container'>
       <form onSubmit={onLogin}>
         <label htmlFor="username">Username</label> <br></br>
-        <input type="text" name='username'></input> <br></br>
+        <input type="text" name='username' id='inputBox'></input> <br></br>
         <label htmlFor="password">Password</label> <br></br>
-        <input type="text" name='password'></input> <br></br>
+        <input type="text" name='password' id='inputBox'></input> <br></br>
         <span>Forgot password</span><br></br>
         <LoginButton />
       </form>

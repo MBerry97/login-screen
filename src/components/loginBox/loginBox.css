@@ -14,10 +14,9 @@
   border: 2px solid green;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 20% 60% 20%;
   grid-template-areas:
     'loginText'
     'loginInput'
-    'loginButton'
     'rememberPassword';
 }

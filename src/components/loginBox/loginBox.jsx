@@ -25,7 +25,7 @@ const LoginBox = (props) => {
         
       <LoginText  text1={props.text1} text2={props.text2}/>
       <LoginInputForm  onLoginDispatch={props.onLogin}/>
-      <LoginButton  />
+      
       <RememberPassword  />
       <JumpingDotsAnim />
       <LoadingAnim />
