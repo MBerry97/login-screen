@@ -1,9 +1,9 @@
 import React from 'react';
 import Lottie from 'react-lottie'
-import animationData from '../../assets/loading_anim.json'
+import animationData from '../../assets/jumping_dots_anim.json'
 import './animations.css'
 
-const LoadingAnim = (props) => {
+const JumpingDotsAnim = (props) => {
   const defaultOptions = {
       loop: true,
       autoplay: true,
@@ -14,14 +14,14 @@ const LoadingAnim = (props) => {
     };
 
   return (
-    <div className='animation__LoadingContainer' id='loadingAnimation'>
+    <div className='animation__DotsContainer' id='dotsAnimation'>
    <Lottie 
 	    options={defaultOptions}
-        height={200}
-        width={200}
+        height={50}
+        width={300}
       />
     </div>
   );
 }
 
-export default LoadingAnim;
+export default JumpingDotsAnim;

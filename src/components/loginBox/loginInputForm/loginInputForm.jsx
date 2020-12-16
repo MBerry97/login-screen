@@ -6,11 +6,13 @@ const LoginInputForm = (props) => {
   
 
    const visibleAnimation = () => {
-    document.getElementById('animation').style.visibility = 'visible'
+    document.getElementById('loadingAnimation').style.visibility = 'visible'
+    document.getElementById('dotsAnimation').style.visibility = 'visible'
     setTimeout(notVisibleAnimation, 3000) 
   }
   const notVisibleAnimation = () => {
-    document.getElementById('animation').style.visibility = 'hidden'
+    document.getElementById('loadingAnimation').style.visibility = 'hidden'
+    document.getElementById('dotsAnimation').style.visibility = 'hidden'
   }
 
 
