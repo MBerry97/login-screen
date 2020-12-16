@@ -8,3 +8,14 @@
   width: 50px;
   height: 100px;
 }
+
+.animation__LoadingContainer {
+  height: 65%;
+  width: 80%;
+  background-color: rgb(247, 242, 242);
+  opacity: 90%;
+}
+
+#loadingAnimation {
+  opacity: 100%;
+}

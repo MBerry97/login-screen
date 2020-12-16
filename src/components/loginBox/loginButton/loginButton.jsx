@@ -9,9 +9,9 @@ const LoginButton = (props) => {
   return (
        <div className='loginButton__container'>  
       <button type='submit'>{props.buttonText}</button>
-      {loading && 
+      {/* {loading &&  */}
       <JumpingDotsAnim />
-      }
+      {/* // } */}
       </div>
   );
 }

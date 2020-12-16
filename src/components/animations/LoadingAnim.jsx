@@ -14,12 +14,12 @@ const LoadingAnim = (props) => {
     };
 
   return (
-    <div className='animation__LoadingContainer' id='loadingAnimation'>
+    <div className='animation__LoadingContainer' >
    <Lottie 
 	    options={defaultOptions}
-        height={200}
-        width={200}
-      />
+        height={250}
+        width={250}
+      id='loadingAnimation' />
     </div>
   );
 }

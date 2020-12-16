@@ -35,9 +35,9 @@ const onLogin = (event) => {
 
   return (
     <div className='inputForm__container'>
-      {loading && 
+      {/* {loading &&  */}
       <LoadingAnim />
-      }
+      {/* // } */}
       <form onSubmit={onLogin}>
         <label htmlFor="username">Username</label> <br></br>
         <input type="text" name='username' id='inputBox'></input> <br></br>
