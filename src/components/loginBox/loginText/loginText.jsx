@@ -3,8 +3,8 @@ import React from 'react';
 const LoginText = (props) => {
   return (
     <div>
-      <span>LOGIN</span> <br></br>
-      <span>Login with your Gamma cloud telephony account.</span>
+      <span>{props.text1}</span> <br></br>
+      <span>{props.text2}</span>
     </div>
   );
 }
