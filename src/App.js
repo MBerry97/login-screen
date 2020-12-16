@@ -1,11 +1,12 @@
 
 import './App.css';
-import LoadingAnim from './components/animations/LoadingAnim';
+
+import LoginBox from './components/loginBox/loginBox';
 
 const App = () => {
   return (
     <div className="App">
-      <LoadingAnim />
+      <LoginBox />
     </div>
   );
 }
