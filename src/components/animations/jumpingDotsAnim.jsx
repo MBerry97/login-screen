@@ -17,8 +17,8 @@ const JumpingDotsAnim = (props) => {
     <div className='animation__DotsContainer' id='dotsAnimation'>
    <Lottie 
 	    options={defaultOptions}
-        height={20}
-        width={40}
+        height={13}
+        width={22}
       />
     </div>
   );

@@ -1,12 +1,13 @@
-.animation__LoadingContainer,
-.animation__DotsContainer {
+.animation__LoadingContainer {
   position: absolute;
   grid-area: loginInput;
 }
 
 .animation__DotsContainer {
-  width: 50px;
-  height: 100px;
+  width: auto;
+  height: 22px;
+  grid-area: loginInput;
+  overflow: visible;
 }
 
 .animation__LoadingContainer {
@@ -14,8 +15,4 @@
   width: 80%;
   background-color: rgb(247, 242, 242);
   opacity: 90%;
-}
-
-#loadingAnimation {
-  opacity: 100%;
 }
