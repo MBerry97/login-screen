@@ -1,0 +1,19 @@
+.loginText__container {
+  display: flex;
+  flex-direction: column;
+}
+
+#login_header {
+  font-family: Mulish Black;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: rgb(118, 83, 243);
+}
+#login_instructions {
+  font-family: Mulish Black;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.loginText__container span {
+  text-align: start;
+}
