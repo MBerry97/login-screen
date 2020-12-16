@@ -22,7 +22,7 @@ const LoginBox = (props) => {
     <div className='loginBox__container'>
       <div className='loginBox__centralContainer'>
       <LoginText  text1={props.text1} text2={props.text2}/>
-      <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading}/>
+      <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading} loading={props.loading}/>
       <RememberPassword  /> 
       <LoadingAnim />
     </div>
@@ -35,7 +35,8 @@ const mapStateToProps = state => {
     text1: state.loginText1,
     text2: state.loginText2,
     loggedIn: state.loggedIn,
-    loginButtonText: state.loginButtonText
+    loginButtonText: state.loginButtonText,
+    loading: state.loading
   }
 }
 const mapDispatchToProps = dispatch => {

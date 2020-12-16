@@ -4,12 +4,12 @@ import '../loginBox.css'
 import './loginButton.css'
 
 const LoginButton = (props) => {
-  const loginText = props.buttonText
+  const loading = props.loading
 
   return (
        <div className='loginButton__container'>  
       <button type='submit'>{props.buttonText}</button>
-      {loginText.length > 5 && 
+      {loading && 
       <JumpingDotsAnim />
       }
       </div>
