@@ -1,6 +1,7 @@
 import React from 'react';
 import Lottie from 'react-lottie'
 import animationData from '../../assets/loading_anim.json'
+import './animations.css'
 
 const LoadingAnim = (props) => {
   const defaultOptions = {
@@ -13,11 +14,11 @@ const LoadingAnim = (props) => {
     };
 
   return (
-    <div>
+    <div className='animation__container' id='animation'>
    <Lottie 
 	    options={defaultOptions}
-        height={400}
-        width={400}
+        height={200}
+        width={200}
       />
     </div>
   );

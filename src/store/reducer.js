@@ -1,6 +1,7 @@
 const initialState = {
   loginText1: 'LOGIN',
-  loginText2: 'Login with your Gamma cloud telephony account.'
+  loginText2: 'Login with your Gamma cloud telephony account.',
+  loggedIn: false
 }
 
 const reducer = (state = initialState, action) => {

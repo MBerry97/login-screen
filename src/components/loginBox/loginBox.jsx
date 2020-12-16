@@ -5,6 +5,7 @@ import LoginInputForm from './loginInputForm/loginInputForm';
 import LoginText from './loginText/loginText';
 import RememberPassword from './rememberPassword/rememberPassword';
 import {connect} from 'react-redux'
+import LoadingAnim from '../animations/LoadingAnim';
 
 const LoginBox = (props) => {
   return (
@@ -14,6 +15,7 @@ const LoginBox = (props) => {
       <LoginInputForm onLoginDispatch={props.onLogin}/>
       <LoginButton />
       <RememberPassword />
+      <LoadingAnim />
     </div>
     </div>
   );

@@ -1,0 +1,5 @@
+.animation__container {
+  position: absolute;
+  grid-area: loginInput;
+  visibility: hidden;
+}

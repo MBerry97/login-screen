@@ -3,12 +3,28 @@ import LoginButton from '../loginButton/loginButton';
 
 
 const LoginInputForm = (props) => {
+  
 
-  const onLogin = (event) => {
-    event.preventDefault()
-    console.log('hey')
-    props.onLoginDispatch()
+   const visibleAnimation = () => {
+    document.getElementById('animation').style.visibility = 'visible'
+    setTimeout(notVisibleAnimation, 3000) 
   }
+  const notVisibleAnimation = () => {
+    document.getElementById('animation').style.visibility = 'hidden'
+  }
+
+
+  const sendDispatch = () => {
+      props.onLoginDispatch()
+  }
+  
+const onLogin = (event) => {
+    event.preventDefault()
+    visibleAnimation()
+    setTimeout(sendDispatch, 3000)    
+  }
+ 
+
   return (
     <div>
       <form onSubmit={onLogin}>
