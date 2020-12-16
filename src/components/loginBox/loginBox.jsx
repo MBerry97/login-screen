@@ -22,9 +22,8 @@ const LoginBox = (props) => {
     <div className='loginBox__container'>
       <div className='loginBox__centralContainer'>
       <LoginText  text1={props.text1} text2={props.text2}/>
-      <LoginInputForm  onLoginDispatch={props.onLogin}/>
-      <RememberPassword  />
-      <JumpingDotsAnim />
+      <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading}/>
+      <RememberPassword  /> 
       <LoadingAnim />
     </div>
     </div>
@@ -35,12 +34,14 @@ const mapStateToProps = state => {
   return {
     text1: state.loginText1,
     text2: state.loginText2,
-    loggedIn: state.loggedIn
+    loggedIn: state.loggedIn,
+    loginButtonText: state.loginButtonText
   }
 }
 const mapDispatchToProps = dispatch => {
   return {
-    onLogin: () => dispatch({type: 'Logged_in'})
+    onLogin: () => dispatch({type: 'Logged_in'}),
+    onLoading: () => dispatch({type: 'Loading'})
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(LoginBox);

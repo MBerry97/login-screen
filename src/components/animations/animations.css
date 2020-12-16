@@ -2,5 +2,12 @@
 .animation__DotsContainer {
   position: absolute;
   grid-area: loginInput;
+}
+
+.animation__LoadingContainer {
   visibility: hidden;
+}
+.animation__DotsContainer {
+  width: 50px;
+  height: 100px;
 }

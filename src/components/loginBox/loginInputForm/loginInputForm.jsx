@@ -6,23 +6,27 @@ const LoginInputForm = (props) => {
   
 
    const visibleAnimation = () => {
-    document.getElementById('loadingAnimation').style.visibility = 'visible'
-    document.getElementById('dotsAnimation').style.visibility = 'visible'
+    // document.getElementById('loadingAnimation').style.visibility = 'visible'
+    // document.getElementById('dotsAnimation').style.visibility = 'visible'
     setTimeout(notVisibleAnimation, 3000) 
   }
   const notVisibleAnimation = () => {
-    document.getElementById('loadingAnimation').style.visibility = 'hidden'
-    document.getElementById('dotsAnimation').style.visibility = 'hidden'
+    // document.getElementById('loadingAnimation').style.visibility = 'hidden'
+    // document.getElementById('dotsAnimation').style.visibility = 'hidden'
   }
 
 
   const sendDispatch = () => {
       props.onLoginDispatch()
   }
+
+  const displayAnimations = () => {
+    props.displayAnimations()
+  }
   
 const onLogin = (event) => {
     event.preventDefault()
-    visibleAnimation()
+    displayAnimations()
     setTimeout(sendDispatch, 3000)    
   }
  
@@ -35,7 +39,7 @@ const onLogin = (event) => {
         <label htmlFor="password">Password</label> <br></br>
         <input type="text" name='password' id='inputBox'></input> <br></br>
         <span>Forgot password</span><br></br>
-        <LoginButton />
+        <LoginButton buttonText={props.buttonText}/>
       </form>
        
     </div>
