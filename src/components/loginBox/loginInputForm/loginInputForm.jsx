@@ -1,4 +1,6 @@
 import React from 'react';
+import LoginButton from '../loginButton/loginButton';
+
 
 const LoginInputForm = (props) => {
   return (
@@ -7,9 +9,11 @@ const LoginInputForm = (props) => {
         <label htmlFor="username">Username</label> <br></br>
         <input type="text" name='username'></input> <br></br>
         <label htmlFor="password">Password</label> <br></br>
-        <input type="text" name='password'></input>
+        <input type="text" name='password'></input> <br></br>
+        <span>Forgot password</span><br></br>
+        <LoginButton />
       </form>
-      <span>Forgot password</span>
+       
     </div>
   );
 }

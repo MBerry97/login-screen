@@ -1,0 +1,4 @@
+.loginButton__container {
+  grid-area: loginButton;
+  border: 1px solid black;
+}
