@@ -1,11 +1,15 @@
 
 import './App.css';
 import LoginBox from './components/loginBox/loginBox';
+import {Router} from '@reach/router'
 
 const App = () => {
   return (
     <div className="App">
-      <LoginBox />
+      <Router >
+      <LoginBox path='/'/>
+      
+      </Router>
     </div>
   );
 }

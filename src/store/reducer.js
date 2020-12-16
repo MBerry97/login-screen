@@ -9,7 +9,8 @@ const reducer = (state = initialState, action) => {
     case 'Logged_in': 
     return {
       loginText1: 'You are now logged in',
-      loginText2: 'Great stuff'
+      loginText2: 'Great stuff',
+      loggedIn: true
     };
     default:
      return state

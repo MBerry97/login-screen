@@ -7,14 +7,26 @@ import RememberPassword from './rememberPassword/rememberPassword';
 import {connect} from 'react-redux'
 import LoadingAnim from '../animations/LoadingAnim';
 
+
 const LoginBox = (props) => {
+  if (props.loggedIn) {
+    return (
+      <div className='loginBox__container'>
+      <div className='loginBox__centralContainer'>
+      <LoginText text1={props.text1} text2={props.text2}/>
+      </div>
+      </div>
+    )
+  }
   return (
     <div className='loginBox__container'>
       <div className='loginBox__centralContainer'>
-      <LoginText text1={props.text1} text2={props.text2}/>
-      <LoginInputForm onLoginDispatch={props.onLogin}/>
-      <LoginButton />
-      <RememberPassword />
+        
+      <LoginText  text1={props.text1} text2={props.text2}/>
+      <LoginInputForm  onLoginDispatch={props.onLogin}/>
+      <LoginButton  />
+      <RememberPassword  />
+      
       <LoadingAnim />
     </div>
     </div>
@@ -24,7 +36,8 @@ const LoginBox = (props) => {
 const mapStateToProps = state => {
   return {
     text1: state.loginText1,
-    text2: state.loginText2
+    text2: state.loginText2,
+    loggedIn: state.loggedIn
   }
 }
 const mapDispatchToProps = dispatch => {
