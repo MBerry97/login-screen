@@ -1,6 +1,5 @@
 
 import './App.css';
-
 import LoginBox from './components/loginBox/loginBox';
 
 const App = () => {
