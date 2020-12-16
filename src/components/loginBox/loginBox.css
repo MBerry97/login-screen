@@ -3,4 +3,21 @@
   height: 100vh;
   margin: 0 auto;
   background-color: rgb(247, 242, 242);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginBox__centralContainer {
+  width: 80%;
+  height: 80vh;
+  border: 2px solid green;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas:
+    'loginText'
+    'loginInput'
+    'loginButton'
+    'rememberPassword';
 }
