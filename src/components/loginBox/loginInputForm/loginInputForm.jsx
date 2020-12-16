@@ -3,9 +3,15 @@ import LoginButton from '../loginButton/loginButton';
 
 
 const LoginInputForm = (props) => {
+
+  const onLogin = (event) => {
+    event.preventDefault()
+    console.log('hey')
+    props.onLoginDispatch()
+  }
   return (
     <div>
-      <form>
+      <form onSubmit={onLogin}>
         <label htmlFor="username">Username</label> <br></br>
         <input type="text" name='username'></input> <br></br>
         <label htmlFor="password">Password</label> <br></br>
