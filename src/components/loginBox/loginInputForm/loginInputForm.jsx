@@ -1,9 +1,11 @@
 import React from 'react';
+import LoadingAnim from '../../animations/LoadingAnim';
 import LoginButton from '../loginButton/loginButton';
 import './loginInputForm.css'
 
 const LoginInputForm = (props) => {
   
+  const loading = props.loading
 
    const visibleAnimation = () => {
     // document.getElementById('loadingAnimation').style.visibility = 'visible'
@@ -33,6 +35,9 @@ const onLogin = (event) => {
 
   return (
     <div className='inputForm__container'>
+      {loading && 
+      <LoadingAnim />
+      }
       <form onSubmit={onLogin}>
         <label htmlFor="username">Username</label> <br></br>
         <input type="text" name='username' id='inputBox'></input> <br></br>
