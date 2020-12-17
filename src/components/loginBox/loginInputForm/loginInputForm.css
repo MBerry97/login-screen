@@ -5,6 +5,13 @@
 #inputBox {
   border-radius: 5px;
   width: 97%;
-  height: 30px;
+  height: 37px;
+  border: 1px solid rgb(202, 206, 233);
   outline-color: rgb(118, 83, 243);
+}
+
+.inputForm__text {
+  font-family: Mulish Black;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
