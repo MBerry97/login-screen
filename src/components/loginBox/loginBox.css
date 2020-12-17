@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 400px;
 }
 
 .loginBox__centralContainer {
@@ -19,4 +20,10 @@
     'loginText'
     'loginInput'
     'rememberPassword';
+}
+
+@media (min-width: 375px) {
+  .loginBox__container {
+    float: left;
+  }
 }
