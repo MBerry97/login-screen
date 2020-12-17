@@ -1,8 +1,7 @@
 
 import './App.css';
+import LoginImage from './components/loginImage/loginImage';
 import LoginBox from './components/loginBox/loginBox';
-import {Router} from '@reach/router'
-import LoginImage from './components/loginImage/loginImage'
 
 const App = () => {
   return (

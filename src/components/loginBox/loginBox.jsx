@@ -6,6 +6,7 @@ import RememberPassword from './rememberPassword/rememberPassword';
 import {connect} from 'react-redux'
 
 
+
 const LoginBox = (props) => {
   if (props.loggedIn) {
     return (
@@ -22,6 +23,7 @@ const LoginBox = (props) => {
       <LoginText  text1={props.text1} text2={props.text2}/>
       <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading} loading={props.loading}/>
       <RememberPassword  /> 
+      
     </div>
     </div>
   );
