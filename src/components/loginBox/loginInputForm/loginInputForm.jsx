@@ -15,10 +15,16 @@ const LoginInputForm = (props) => {
     props.displayAnimations()
 
   }
+
+  const fadeImage = () => {
+    const image = document.getElementById('loginImage')
+    image.classList.toggle('fade')
+  }
   
 const onLogin = (event) => {
     event.preventDefault()
     displayAnimations()
+    setTimeout(fadeImage, 2900)
     setTimeout(sendDispatch, 3000)    
   }
  
