@@ -3,9 +3,7 @@
   visibility: visible;
   width: 700px;
   height: 500px;
-  /* min-width: 800px; */
   position: relative;
-
   left: 0;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
