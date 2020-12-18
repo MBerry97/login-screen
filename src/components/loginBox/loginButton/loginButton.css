@@ -31,19 +31,17 @@
   justify-content: center;
   width: 200px;
   margin: auto 0;
-  z-index: 2;
-}
-
-.loginButton__container button:focus {
-  background-color: rgb(247, 242, 242);
-  color: rgb(118, 83, 243);
-}
-
-.loginButton__container button:hover {
-  transform: translateY(-10px);
-  z-index: 0;
+  position: relative;
+  z-index: 3;
 }
 
 .noHover {
   pointer-events: none;
+}
+
+@media (min-width: 400px) {
+  .loginButton__container button:hover {
+    transform: translateY(-5px);
+    z-index: 0;
+  }
 }

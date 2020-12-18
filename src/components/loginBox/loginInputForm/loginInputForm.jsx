@@ -21,15 +21,18 @@ const LoginInputForm = (props) => {
     image.classList.toggle('fade')
   }
 
-  const removePointerEvent = () => {
+  const changeButtonStyle = () => {
     const button = document.getElementById('loginButton')
+    button.style.backgroundColor = 'rgb(247, 242, 242)';
+    button.style.color  = 'rgb(118, 83, 243)';
     button.classList.toggle('noHover')
+  
   }
   
 const onLogin = (event) => {
     event.preventDefault()
     displayAnimations()
-    removePointerEvent()
+    changeButtonStyle()
     setTimeout(fadeImage, 2900)
     setTimeout(sendDispatch, 3000)
        
