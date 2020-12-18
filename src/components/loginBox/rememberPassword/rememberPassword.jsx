@@ -4,7 +4,10 @@ const RememberPassword = (props) => {
   return (
     <div className='rememberPassword__container'>
       <span>Remember my password </span>
-      <input type='radio'></input>
+      <label className="switch">
+  <input type="checkbox" />
+  <span className="slider round"></span>
+       </label>
     </div>
   );
 }
