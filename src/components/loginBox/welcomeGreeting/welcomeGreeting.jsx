@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginText from '../loginBox/loginText/loginText';
+import LoginText from '../loginText/loginText.jsx';
 
 const WelcomeGreeting = (props) => {
   return (

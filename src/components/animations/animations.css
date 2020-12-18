@@ -11,7 +11,7 @@
 }
 
 .animation__LoadingContainer {
-  height: 70%;
+  height: 100%;
   width: 100%;
   background-color: rgb(247, 248, 253);
   opacity: 90%;

@@ -4,7 +4,7 @@ import LoginInputForm from './loginInputForm/loginInputForm';
 import LoginText from './loginText/loginText';
 import RememberPassword from './rememberPassword/rememberPassword';
 import {connect} from 'react-redux'
-import WelcomeGreeting from '../welcomeGreeting/welcomeGreeting';
+import WelcomeGreeting from './welcomeGreeting/welcomeGreeting';
 
 
 
