@@ -11,7 +11,7 @@ import WelcomeGreeting from '../welcomeGreeting/welcomeGreeting';
 const LoginBox = (props) => {
   if (props.loggedIn) {
     return (
-      <WelcomeGreeting text1={props.text1} text2={props.text2} />
+      <WelcomeGreeting text1={props.text1} text2={props.text2} loggedIn={props.loggedIn}/>
     )
   }
   return (
