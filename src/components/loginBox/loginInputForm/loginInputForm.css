@@ -15,3 +15,10 @@
   font-size: 0.9rem;
   font-weight: 600;
 }
+
+#forgotPassword__text {
+  font-family: Mulish Black;
+  color: rgb(118, 83, 243);
+  font-size: 0.7rem;
+  font-weight: 800;
+}

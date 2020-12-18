@@ -39,7 +39,7 @@ const onLogin = (event) => {
         <input type="text" name='username' id='inputBox'></input> <br></br>
         <label htmlFor="password" className='inputForm__text'>Password</label> <br></br>
         <input type="text" name='password' id='inputBox'></input> <br></br>
-        <span>Forgot password</span><br></br>
+        <span id='forgotPassword__text'>Forgot password</span><br></br>
         <LoginButton buttonText={props.buttonText} loading={props.loading}/>
       </form>
        
