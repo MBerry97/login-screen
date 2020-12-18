@@ -14,7 +14,7 @@
 .loginBox__centralContainer {
   width: 80%;
   height: 80vh;
-
+  min-height: 600px;
   margin: 0 auto;
   display: grid;
   grid-template-rows: 20% 60% 20%;

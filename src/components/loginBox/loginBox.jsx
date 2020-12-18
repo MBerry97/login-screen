@@ -4,26 +4,22 @@ import LoginInputForm from './loginInputForm/loginInputForm';
 import LoginText from './loginText/loginText';
 import RememberPassword from './rememberPassword/rememberPassword';
 import {connect} from 'react-redux'
+import WelcomeGreeting from '../welcomeGreeting/welcomeGreeting';
 
 
 
 const LoginBox = (props) => {
   if (props.loggedIn) {
     return (
-      <div className='loginBox__container'>
-      <div className='loginBox__centralContainer'>
-      <LoginText text1={props.text1} text2={props.text2}/>
-      </div>
-      </div>
+      <WelcomeGreeting text1={props.text1} text2={props.text2} />
     )
   }
   return (
     <div className='loginBox__container'>
       <div className='loginBox__centralContainer'>
-      <LoginText  text1={props.text1} text2={props.text2}/>
+      <LoginText  text1={props.text1} text2={props.text2} loggedIn = {props.loggedIn}/>
       <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading} loading={props.loading}/>
-      <RememberPassword  /> 
-      
+      <RememberPassword  />   
     </div>
     </div>
   );
