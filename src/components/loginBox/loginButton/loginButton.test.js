@@ -20,7 +20,7 @@ return {...render(<Provider store={store}>{component}</Provider>)}
 }
 
 describe('<LoginButton />', () => {
-  it('renders with the correct content', () => {
+  it('renders with the correct text content', () => {
       const {getByTestId} = renderWithRedux(<LoginButton buttonText={state.loginButtonText}/>)
       const loginButton = (getByTestId('loginButton'))
       expect(loginButton).toHaveTextContent('Login')

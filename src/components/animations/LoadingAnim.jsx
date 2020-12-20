@@ -14,7 +14,7 @@ const LoadingAnim = (props) => {
     };
 
   return (
-    <div className='animation__LoadingContainer' >
+    <div data-testid='loadingAnim' className='animation__LoadingContainer' >
    <Lottie 
 	    options={defaultOptions}
         height={250}
