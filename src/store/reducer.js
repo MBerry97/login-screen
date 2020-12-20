@@ -3,7 +3,7 @@ const initialState = {
   loginText2: 'Login with your Gamma cloud telephony account.',
   loggedIn: false,
   loginButtonText: 'Login',
-  Loading: false
+  loading: false
 }
 
 const reducer = (state = initialState, action) => {
