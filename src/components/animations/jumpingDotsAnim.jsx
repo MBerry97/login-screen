@@ -14,7 +14,7 @@ const JumpingDotsAnim = (props) => {
     };
 
   return (
-    <div className='animation__DotsContainer' id='dotsAnimation'>
+    <div data-testid='jumpingDots' className='animation__DotsContainer' id='dotsAnimation'>
    <Lottie 
 	    options={defaultOptions}
         height={13}

@@ -8,7 +8,7 @@ const LoginButton = (props) => {
 
   return (
        <div className='loginButton__container'>  
-      <button type='submit' id='loginButton'><span>{props.buttonText}
+      <button data-testid='loginButton' type='submit' id='loginButton'><span data-testid='loginSpan'>{props.buttonText}
       {loading && 
       <JumpingDotsAnim />
       }
