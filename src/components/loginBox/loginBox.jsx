@@ -16,8 +16,8 @@ const LoginBox = (props) => {
     )
   }
   return (
-    <div className='loginBox__container'>
-      <div className='loginBox__centralContainer'>
+    <div  className='loginBox__container'>
+      <div data-testid='loginBox' className='loginBox__centralContainer'>
       <LoginText  text1={props.text1} text2={props.text2} loggedIn = {props.loggedIn}/>
       <LoginInputForm  onLoginDispatch={props.onLogin} loggedIn={props.loggedIn} buttonText={props.loginButtonText} displayAnimations={props.onLoading} loading={props.loading}/>
       <RememberPassword data-testid='' />   
