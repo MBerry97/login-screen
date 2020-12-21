@@ -43,7 +43,7 @@ const onLogin = (event) => {
     <div data-testid='inputForm' className='inputForm__container'>
       {loading && 
       <LoadingAnim />
-       } 
+        } 
       <form onSubmit={onLogin}>
         <label htmlFor="username" className='inputForm__text'>Username</label> <br></br>
         <input data-testid='inputBox' type="text" name='username' id='inputBox'></input> <br></br>

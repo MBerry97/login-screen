@@ -17,7 +17,7 @@
   height: 100%;
   width: 100%;
   background-color: rgb(247, 248, 253);
-  opacity: 90%;
+  opacity: 0.9;
   z-index: 1;
   max-width: 450px;
 }
