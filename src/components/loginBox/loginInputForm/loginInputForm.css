@@ -22,3 +22,12 @@
   font-size: 0.8rem;
   font-weight: 800;
 }
+
+@media (min-width: 375px) {
+  #inputBox {
+    height: 33px;
+  }
+  .inputForm__text {
+    font-size: 0.8rem;
+  }
+}
