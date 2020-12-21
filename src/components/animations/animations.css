@@ -8,6 +8,9 @@
   height: 22px;
   grid-area: loginInput;
   overflow: visible;
+  position: relative;
+  left: 5px;
+  top: 2px;
 }
 
 .animation__LoadingContainer {

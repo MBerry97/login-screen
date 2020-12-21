@@ -30,4 +30,7 @@
   .inputForm__text {
     font-size: 0.8rem;
   }
+  #forgotPassword__text {
+    font-size: 0.6rem;
+  }
 }
