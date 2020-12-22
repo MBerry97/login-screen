@@ -19,7 +19,6 @@
   background-color: rgb(247, 248, 253);
   opacity: 0.9;
   z-index: 1;
-  max-width: 450px;
 }
 
 @media (min-width: 375px) {
